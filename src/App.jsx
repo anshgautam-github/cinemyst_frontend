@@ -1,20 +1,17 @@
 import React from 'react';
-import Header from './components/Header';
-import SearchBar from './components/SearchBar';
-import IndustryRadar from './components/IndustryRadar';
-import CreatorFeed from './components/CreatorFeed';
-import BottomNav from './components/BottomNav';
+import DarkHeader from './components/DarkHeader';
+import SpotlightHero from './components/SpotlightHero';
+import TalentGrid from './components/TalentGrid';
+import './App.css';
 
 function App() {
   return (
-    <div className="mobile-app-container">
-      <div className="app-content">
-        <Header />
-        <SearchBar />
-        <IndustryRadar />
-        <CreatorFeed />
-      </div>
-      <BottomNav />
+    <div className="cinematic-app">
+      <DarkHeader />
+      <main className="content-area">
+        <SpotlightHero />
+        <TalentGrid />
+      </main>
     </div>
   );
 }
