@@ -16,7 +16,7 @@ const Footer = () => {
       <div className="footer-links">
         <Link to="/privacy" className="footer-link">Privacy Policy</Link>
         <Link to="/terms" className="footer-link">Terms and Conditions</Link>
-        <a href="#contact" className="footer-link">Contact Us</a>
+        <a href="mailto:hello@cinemyst.in" className="footer-link">Contact Us</a>
       </div>
       <div className="footer-bottom">
         <p>&copy; {new Date().getFullYear()} CineMyst. All rights reserved.</p>

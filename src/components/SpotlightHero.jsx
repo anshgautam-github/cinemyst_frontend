@@ -17,8 +17,8 @@ const SpotlightHero = () => {
           Break the barriers. In India's film industry, genuine talent deserves a direct stage. Connect, discover, and be discovered without the middlemen.
         </p>
         <div className="hero-buttons">
-          <button className="glow-btn">Explore Talent</button>
-          <button className="glow-btn-gold hero-btn-alt">
+          <a href="#talent" className="glow-btn" style={{display: 'inline-flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box'}}>Explore Talent</a>
+          <button className="glow-btn-gold hero-btn-alt" onClick={() => alert('Casting portal opening soon!')}>
             <PlayCircle size={20} style={{marginRight: '8px'}} />
             Post a Casting
           </button>

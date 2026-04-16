@@ -14,12 +14,12 @@ const DarkHeader = () => {
       </div>
       <nav className="header-nav">
         <Link to="/" className="nav-link active">Discover</Link>
-        <a href="#castings" className="nav-link">Castings</a>
-        <a href="#flicks" className="nav-link">Flicks</a>
-        <a href="#community" className="nav-link">Community</a>
+        <button onClick={() => alert('Castings portal coming soon!')} className="nav-link" style={{background: 'transparent', border: 'none', cursor: 'pointer', fontFamily: 'inherit'}}>Castings</button>
+        <button onClick={() => alert('Flicks coming soon!')} className="nav-link" style={{background: 'transparent', border: 'none', cursor: 'pointer', fontFamily: 'inherit'}}>Flicks</button>
+        <button onClick={() => alert('Community coming soon!')} className="nav-link" style={{background: 'transparent', border: 'none', cursor: 'pointer', fontFamily: 'inherit'}}>Community</button>
       </nav>
       <div className="header-cta">
-        <button className="glow-btn">
+        <button className="glow-btn" onClick={() => alert('Network registration opening soon!')}>
           <Sparkles size={16} style={{marginRight: '8px'}} />
           Join Network
         </button>

@@ -11,7 +11,7 @@ const talents = [
 
 const TalentGrid = () => {
   return (
-    <section className="talent-section">
+    <section id="talent" className="talent-section">
       <div className="section-header">
         <h2 className="section-title">Discover <span className="text-gradient-purple">Visionaries</span></h2>
         <p className="section-subtitle">Real portfolios, real opportunities. No filters.</p>
@@ -22,7 +22,7 @@ const TalentGrid = () => {
             <div className="card-img-wrapper">
               <img src={talent.image} alt={talent.name} className="talent-img" />
               <div className="card-overlay">
-                <button className="glow-btn overlay-btn">View Portfolio</button>
+                <button className="glow-btn overlay-btn" onClick={() => alert('Portfolio details coming soon!')}>View Portfolio</button>
               </div>
             </div>
             <div className="card-info">
