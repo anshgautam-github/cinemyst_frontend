@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --font-family: 'Inter', sans-serif;
+  --bg-color: #FAFAFB;
+  --text-dark: #2A1733; 
+  --text-muted: #826D8A;
+  
+  --primary-purple: #8B307D;
+  --primary-gradient: linear-gradient(135deg, #814F98 0%, #A25DB2 100%);
+  --accent-pink: #D480A4;
+  --card-bg: #FFFFFF;
+  --border-light: rgba(0, 0, 0, 0.04);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: #EAEAEF; /* Darker outside the mobile frame */
+  color: var(--text-dark);
+  -webkit-font-smoothing: antialiased;
+}
+
+.mobile-app-container {
+  max-width: 480px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  background-image: 
+    radial-gradient(circle at top left, rgba(139, 48, 125, 0.06) 0%, transparent 40%),
+    radial-gradient(circle at top right, rgba(139, 48, 125, 0.03) 0%, transparent 30%);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 50px rgba(0,0,0,0.1);
+}
+
+.app-content {
+  padding: 24px;
+  padding-bottom: 110px; /* space for bottom nav */
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  font-family: inherit;
+}
+
+input {
+  font-family: inherit;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Beautiful custom utilities */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #531149 0%, #B75691 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
