@@ -1,5 +1,6 @@
 import React from 'react';
 import { Video } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 
 const Footer = () => {
@@ -13,8 +14,8 @@ const Footer = () => {
         <p className="footer-tagline">Empowering genuine talent in India's film industry.</p>
       </div>
       <div className="footer-links">
-        <a href="#privacy" className="footer-link">Privacy Policy</a>
-        <a href="#terms" className="footer-link">Terms and Conditions</a>
+        <Link to="/privacy" className="footer-link">Privacy Policy</Link>
+        <Link to="/terms" className="footer-link">Terms and Conditions</Link>
         <a href="#contact" className="footer-link">Contact Us</a>
       </div>
       <div className="footer-bottom">
